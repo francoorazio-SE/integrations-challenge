@@ -65,6 +65,9 @@ jobs:
       - name: build
         if: steps.connector.outputs.written == 'true'
         run: make build
+      - name: build the connector
+        if: steps.connector.outputs.written == 'true'
+        run: connector/setup.sh
       - name: the smoke gate
         if: steps.connector.outputs.written == 'true'
         run: ./bin/grade run --scenario S0

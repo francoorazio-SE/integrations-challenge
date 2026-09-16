@@ -173,6 +173,7 @@ soap-smoke:
 
 ## scenario: run one scenario, e.g. make scenario S=S1 [NOCHAOS=1]
 scenario: build
+	@if [ -x connector/setup.sh ]; then connector/setup.sh; fi
 	@$(BIN)/grade run --scenario $(S) $(CONNECTOR_FLAG) $(CHAOS_FLAG)
 
 ## selfcheck: run every public scenario with per-assertion output (STRETCH=1 adds X1 and X2)
