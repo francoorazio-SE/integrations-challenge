@@ -29,5 +29,5 @@ import (
 	// blp-json-v1.
 	_ "github.com/fatjonblp/coding_challange_integrations/internal/importer/canonical"
 	// The legacy KRED-EXP 2.1 profile. Uncomment to enable; see above.
-	// _ "github.com/fatjonblp/coding_challange_integrations/internal/importer/kredexp"
+	_ "github.com/fatjonblp/coding_challange_integrations/internal/importer/kredexp"
 )

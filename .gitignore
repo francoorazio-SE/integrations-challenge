@@ -1,7 +1,7 @@
 # build output
 /bin/
 /dist/
-
+/connector/bin
 # `go build ./...` in a module root drops one executable per main package into
 # the working directory. Three of them were committed once and rode into the
 # candidate bundle, which is how a candidate nearly received the reference
